@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>{{$title??'Eticaret'}}</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{asset("/admintema/vendor/fontawesome-free/css/all.min.css")}}" rel="stylesheet" type="text/css">
@@ -365,7 +365,7 @@
             <!-- Begin Page Content -->
             <div class="container-fluid">
 
-            {{$slot}}
+                {{$slot}}
 
             </div>
             <!-- /.container-fluid -->
@@ -416,7 +416,7 @@
 
 <!-- Bootstrap core JavaScript-->
 <script src="{{asset("/admintema/vendor/jquery/jquery.min.js")}}"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset("/admintema/vendor/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
 
 <!-- Core plugin JavaScript-->
 <script src="{{asset("/admintema/vendor/jquery-easing/jquery.easing.min.js")}}"></script>
